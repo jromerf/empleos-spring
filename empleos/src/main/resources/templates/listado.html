@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="UTF-8"/>
+<title>Listado de ofertas de trabajo</title>
+</head>
+<body>
+	<h1>Vacantes disponibles</h1>
+	<ol>
+		<!-- 	tmpEmp es una variable temporal que se puede 
+		llamar en cualquier parte del código -->
+		<li th:each="tmpEmp:${empleos}" th:text="${tmpEmp}"></li>
+	</ol>
+</body>
+</html>
